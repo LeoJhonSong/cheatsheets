@@ -1,0 +1,7 @@
+% pacman, system
+
+# 更新源为按打分降序的可用中国镜像站列表
+sudo pacman-mirrors -i -c China -m rank
+
+# 强制刷新pacman所有软件源列表缓存
+sudo pacman -Syy

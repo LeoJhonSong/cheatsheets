@@ -1,0 +1,7 @@
+% docker
+
+# Pull official docker image of Arch Linux of tag base-devel
+docker pull archlinux/archlinux:base-devel
+
+# Create and run bash in a new container of certain image with certain name, shared network, interact terminal
+docker run -it --net=host --name=<name> <image> bash

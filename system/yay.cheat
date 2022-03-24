@@ -1,0 +1,9 @@
+% yay, system
+
+# 删除无用包
+yay -Rns $(yay -Qtdq)
+
+# 按关键词查找包
+yay -Qs<verbose> <package>
+
+$ verbose: echo -e 'false;q\ntrue;' | column -t -s ';' --- --column 2 --map "grep ."
